@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 const ContactPage = () => {
 
   return (
-    <>
+    <div className="bg-gray-100 min-h-screen">
       <NavBar />
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
@@ -54,7 +54,7 @@ const ContactPage = () => {
         </button>
       </form>
     </div>
-    </>
+    </div>
   );
 };
 

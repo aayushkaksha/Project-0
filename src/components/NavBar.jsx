@@ -9,22 +9,26 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  
+  const GotoTop = () => {
+    window.location(0, 0)
+  }
+
+
 
   return (
     <div className="sticky top-0 z-10 w-full bg-white shadow-md">
       <div className="container mx-auto relative">
         <nav className="flex items-center justify-between py-4">
-          <NavLink to="/" className="text-2xl font-bold">
+          <NavLink to="/" className="text-2xl font-bold" onClick={GotoTop}>
             Brand<span className="text-primary">.</span>
           </NavLink>
 
           <ul className="hidden lg:flex space-x-6">
-            
-            <li><NavLink to="/Men" className="flex items-center">Men</NavLink></li>
-            <li><NavLink to="/Women">Women</NavLink></li>
-            <li><NavLink to="/About" className="text-primary">About</NavLink></li>
-            <li><NavLink to="/ContactPage">Contact</NavLink></li>
+
+            <li><NavLink to="/Men" className="flex items-center" onClick={GotoTop}>Men</NavLink></li>
+            <li><NavLink to="/Women" onClick={GotoTop}>Women</NavLink></li>
+            <li><NavLink to="/About" className="text-primary" onClick={GotoTop}>About</NavLink></li>
+            <li><NavLink to="/ContactPage" onClick={GotoTop}>Contact</NavLink></li>
           </ul>
 
           <div className="flex items-center space-x-4">
@@ -47,10 +51,10 @@ const NavBar = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-2 py-2 bg-white border-t">
             <ul className="space-y-2">
-              <li><NavLink to="/Men" className="block px-4 py-2 hover:bg-gray-100">Men</NavLink></li>
-              <li><NavLink to="/Women" className="block px-4 py-2 hover:bg-gray-100">Women</NavLink></li>
-              <li><NavLink to="/About" className="block px-4 py-2 hover:bg-gray-100 text-primary">About</NavLink></li>
-              <li><NavLink to="/ContactPage" className="block px-4 py-2 hover:bg-gray-100">Contact</NavLink></li>
+              <li><NavLink to="/Men" className="block px-4 py-2 hover:bg-gray-100" onClick={GotoTop}>Men</NavLink></li>
+              <li><NavLink to="/Women" className="block px-4 py-2 hover:bg-gray-100" onClick={GotoTop}>Women</NavLink></li>
+              <li><NavLink to="/About" className="block px-4 py-2 hover:bg-gray-100 text-primary" onClick={GotoTop}>About</NavLink></li>
+              <li><NavLink to="/ContactPage" className="block px-4 py-2 hover:bg-gray-100" onClick={GotoTop}>Contact</NavLink></li>
             </ul>
           </div>
         )}
