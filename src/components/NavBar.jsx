@@ -35,9 +35,9 @@ const NavBar = () => {
             <button className="p-2 hover:bg-gray-100 rounded-full">
               <Search className="w-5 h-5" />
             </button>
-            <button className="p-2 hover:bg-gray-100 rounded-full">
+            <NavLink to="/profile" className="p-2 hover:bg-gray-100 rounded-full">
               <User className="w-5 h-5" />
-            </button>
+            </NavLink>
             <NavLink to="/cart" className="relative p-2 hover:bg-gray-100 rounded-full">
               <ShoppingCart className="w-5 h-5" />
               <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-primary rounded-full">2</span>

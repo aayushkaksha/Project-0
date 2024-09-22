@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import wishitems from '../dataFile/wishitems.json'
-import { FaTimes } from 'react-icons/fa'
+import wishItems from '../dataFile/wishItems.json'
+import { X } from 'lucide-react'
 import { Box, Button, Typography, Modal } from '@mui/material'
 
 const Wishlist = () => {
-  const [items, setItems] = useState(wishitems)
+  const [items, setItems] = useState(wishItems)
   const [open, setOpen] = useState(false)
   const [itemToRemove, setItemToRemove] = useState(null)
 
@@ -35,6 +35,9 @@ const Wishlist = () => {
               Price
             </th>
             <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
+              Stock Status
+            </th>
+            <th className='text-left py-3 px-4 uppercase font-semibold text-sm'>
               Actions
             </th>
           </tr>
@@ -45,21 +48,22 @@ const Wishlist = () => {
               <td className='py-4 px-4'>
                 <div className='flex items-center'>
                   <img
-                    className='h-16 w-16 mr-4'
+                    className='h-16 w-16 mr-4 object-cover'
                     src={item.image}
                     alt={item.name}
                   />
                   <span className='font-medium'>{item.name}</span>
                 </div>
               </td>
-              <td className='py-4 px-4'>${item.price}</td>
+              <td className='py-4 px-4'>{item.price}</td>
+              <td className='py-4 px-4'>{item.stockStatus}</td>
               <td className='py-4 px-4'>
                 <div className='flex items-center space-x-2'>
                   <button className='bg-gray-900 text-white px-4 py-2 rounded hover:bg-white hover:text-black font-semibold border border-black transition duration-300'>
                     Add to Cart
                   </button>
                   <div className='relative group'>
-                    <FaTimes
+                    <X
                       className='text-gray-500 cursor-pointer hover:text-gray-700'
                       onClick={() => handleOpen(item)}
                     />

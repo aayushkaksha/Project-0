@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.1",
     "fa-icons": "^0.2.0",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.439.0",

@@ -1,5 +1,5 @@
 import NavBar from '../components/NavBar'
-import { FaHeart, FaEdit, FaTimes } from 'react-icons/fa'
+import { Heart, Edit, X } from 'lucide-react';
 import Wishlist from '../components/Wishlist'
 import { useState } from 'react'
 
@@ -28,11 +28,11 @@ const Profile = () => {
                 className='bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black font-semibold border border-black transition duration-300 flex items-center'
                 onClick={() => setWishlistOpen(true)}
               >
-                <FaHeart className='mr-2' />
+                <Heart className='mr-2' />
                 Wishlist
               </button>
               <button className='bg-black text-white px-4 py-2 rounded-full hover:bg-white hover:text-black font-semibold border border-black transition duration-300 flex items-center'>
-                <FaEdit className='mr-2' />
+                <Edit className='mr-2' />
                 Edit Profile
               </button>
             </div>
@@ -47,7 +47,7 @@ const Profile = () => {
                   onClick={() => setWishlistOpen(false)}
                   className='text-gray-500 hover:text-black'
                 >
-                  <FaTimes size={24} />
+                  <X size={24} />
                 </button>
               </div>
               <Wishlist />
