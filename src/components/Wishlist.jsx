@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import wishItems from '../dataFile/wishItems.json'
 import { X } from 'lucide-react'
 import { Box, Button, Typography, Modal } from '@mui/material'

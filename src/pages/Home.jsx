@@ -8,6 +8,18 @@ const Home = () => {
       <NavBar />
       <Carousel />
 
+    <div className="horiCardCont">
+    </div>
+
+      <div className="cardCont">
+        <div className="popular">
+
+        </div>
+        <div className="recommended">
+
+        </div>
+      </div>
+
       <Card />
     </div>
   );

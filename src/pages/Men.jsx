@@ -1,10 +1,11 @@
 import NavBar from "../components/NavBar";
+import Checkout from "./Checkout";
 
 const Men = () => {
   return (
     <div>
       <NavBar />
-      <h1>Men</h1>
+      <Checkout />
     </div>
   )
 }
