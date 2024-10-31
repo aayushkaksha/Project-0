@@ -2,56 +2,56 @@
   {
     "id": 1,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 1"
+    "label": "Shirt"
   },
   {
     "id": 2,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 2"
+    "label": "Trousers"
   },
   {
     "id": 3,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 3"
+    "label": "Jeans"
   },
   {
     "id": 4,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 4"
+    "label": "Hoodie"
   },
   {
     "id": 5,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 5"
+    "label": "Sweater"
   },
   {
     "id": 6,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 6"
+    "label": "Shorts"
   },
   {
     "id": 7,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 7"
+    "label": "Skirt"
   },
   {
     "id": 8,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 8"
+    "label": "Coat"
   },
   {
     "id": 9,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 9"
+    "label": "Blazer"
   },
   {
     "id": 10,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 10"
+    "label": "Dress"
   },
   {
     "id": 11,
     "image": "https://via.placeholder.com/70",
-    "label": "Label 11"
+    "label": "Jacket"
   }
 ]

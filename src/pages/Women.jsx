@@ -1,5 +1,5 @@
 // Women.js
-import HorizontalSlider from "../components/HoriSlider"; 
+
 import NavBar from "../components/NavBar";
 
 const Women = () => {
@@ -7,7 +7,7 @@ const Women = () => {
     <div>
       <NavBar />
       <div>
-        <HorizontalSlider />
+        
       </div>
     </div>
   );

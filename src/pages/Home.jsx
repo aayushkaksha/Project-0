@@ -1,26 +1,28 @@
-import Card from "../components/Card";
-import Carousel from "../components/Carasol";
 import NavBar from "../components/NavBar";
+import Carousel from "../components/Carasol";
+import HorizontalSlider from "../components/HoriSlider";
+import Card from "../components/Card";
 const Home = () => {
-
   return (
     <div className="bg-gray-100 min-h-screen">
       <NavBar />
       <Carousel />
 
-    <div className="horiCardCont">
-    </div>
+      <div className="horiCardCont">
+        <HorizontalSlider />
+      </div>
 
       <div className="cardCont">
         <div className="popular">
-
+          <p className="ml-8 mt-16 text-lg font-semibold">Popular</p>
+          <Card />          
         </div>
-        <div className="recommended">
 
+        <div className="recommended">
+          <p className="ml-8 mt-16 text-lg font-semibold">Recommended</p>
+          <Card />
         </div>
       </div>
-
-      <Card />
     </div>
   );
 };

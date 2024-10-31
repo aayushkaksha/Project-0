@@ -3,17 +3,16 @@ import horiCardData from "../dataFile/horiCardData.json";
 
 const HorizontalSlider = () => {
   return (
-    <div className="">
-      <p className="h3 text-b">Trending</p>
-      <div className="overflow-x-auto flex whitespace-nowrap py-4">
+    <div className="mt-16">
+      <p className="ml-8 text-lg font-semibold">Trending</p>
+      <div className="overflow-x-auto flex whitespace-nowrap mx-8 py-4">
         <div className="flex gap-4">
-          {horiCardData.map(() => (
+          {horiCardData.map(({ id, image, label }) =>(
             <HoriCard
-              key={horiCardData.id}
-              image={horiCardData.image}
-              label={horiCardData.label}
-            />
-          ))}
+              key={id} 
+              image={image}
+              label={label} />
+            ))}
         </div>
       </div>
     </div>
