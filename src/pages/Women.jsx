@@ -7,7 +7,7 @@ const Women = () => {
     <div>
       <NavBar />
       <div>
-        
+        Using as a playground
       </div>
     </div>
   );
