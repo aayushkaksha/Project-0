@@ -48,14 +48,18 @@ const Card = () => {
                 </svg>
               </button>
             </div>
-            <div className="px-4 py-3 flex justify-between items-center">
-              <span className="font-semibold text-gray-800 text-sm md:text-base lg:text-lg">
-                {card.Name}
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs lg:text-sm font-semibold text-gray-700">
-                ${card.Price}
-              </span>
-            </div>
+            <div className="mt-2 p-2 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    <a href={card.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {card.Name}
+                    </a>
+                  </h3>
+                  
+                </div>
+                <p className="text-sm font-medium text-gray-900">Rs.{card.Price}</p>
+              </div>
           </div>
         ))}
       </div>
