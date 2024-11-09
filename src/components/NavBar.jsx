@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Search, User, ShoppingCart, Menu } from 'lucide-react';
+import { useState } from 'react';
+import { Search, User, ShoppingCart, Menu, MailIcon } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
@@ -38,9 +38,11 @@ const NavBar = () => {
             <NavLink to="/profile" className="p-2 hover:bg-gray-100 rounded-full">
               <User className="w-5 h-5" />
             </NavLink>
+            <NavLink to="/message" className="relative p-2 hover:bg-gray-100 rounded-full">
+              <MailIcon className="w-5 h-5"/>
+            </NavLink >
             <NavLink to="/cart" className="relative p-2 hover:bg-gray-100 rounded-full">
               <ShoppingCart className="w-5 h-5" />
-              <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-primary rounded-full">2</span>
             </NavLink>
             <button onClick={toggleMenu} className="lg:hidden p-2 hover:bg-gray-100 rounded-full">
               <Menu className="w-5 h-5" />

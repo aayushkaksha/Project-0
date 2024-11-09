@@ -7,6 +7,7 @@ import Profile from "./pages/Profile";
 import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Message from "./pages/Message";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/About" element={<About />} />
             <Route path="/ContactPage" element={<ContactPage />} />
             <Route path="/Profile" element={<Profile />} />
+            <Route path="/Message" element={<Message />} />
             <Route path="/Cart" element={<Cart />} />
           </Routes>
 

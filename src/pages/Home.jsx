@@ -8,9 +8,9 @@ const Home = () => {
       <NavBar />
       <Carousel />
 
-      <div className="horiCardCont">
+
         <HorizontalSlider />
-      </div>
+
 
       <div className="cardCont">
         <div className="popular">
