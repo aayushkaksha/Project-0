@@ -1,13 +1,11 @@
-import MessageBox from "../components/Messagebox";
-import NavBar from "../components/NavBar"
+import MessageBox from '../components/Messagebox'
 
 const Message = () => {
   return (
     <div>
-      <NavBar />
       <MessageBox />
     </div>
   )
 }
 
-export default Message;
+export default Message

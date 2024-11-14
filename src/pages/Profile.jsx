@@ -1,5 +1,4 @@
-import NavBar from '../components/NavBar'
-import { Heart, Edit, X } from 'lucide-react';
+import { Heart, Edit, X } from 'lucide-react'
 import Wishlist from '../components/Wishlist'
 import { useState } from 'react'
 
@@ -7,7 +6,6 @@ const Profile = () => {
   const [wishlistOpen, setWishlistOpen] = useState(false)
   return (
     <div className='flex flex-col min-h-screen'>
-      <NavBar />
       <div className='flex-grow overflow-auto'>
         <div className='container mx-auto px-4 py-8'>
           <div className='flex flex-col items-center'>

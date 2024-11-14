@@ -24,8 +24,8 @@ const NavBar = () => {
           </NavLink>
           <ul className='hidden lg:flex space-x-6 font-poppins'>
             <li>
-              <NavLink to='/Men' className='flex items-center font-poppins'>
-                Men
+              <NavLink to='/Shop' className='flex items-center font-poppins'>
+                Shop
               </NavLink>
             </li>
             <li>

@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <nav
       id='sidebar'
-      className='bg-white text-gray-800 p-6 w-[300px] fixed top-0 shadow-lg mt-14 pt-10 z-10 h-screen hidden lg:block'
+      className='bg-white text-gray-800 p-6 w-[300px] fixed top-0 shadow-lg mt-14 pt-10 h-screen hidden lg:block'
     >
       <div className='pt-5'>
         <h5 className='font-poppins text-2xl font-normal mb-7'>Categories</h5>
