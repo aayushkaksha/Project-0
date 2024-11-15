@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Carousel from "../components/Carasol";
 import HorizontalSlider from "../components/HoriSlider";
-import Card from "../components/Card";
+import UCard from "../components/UCard";
 const Home = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -14,13 +14,13 @@ const Home = () => {
 
       <div className="cardCont">
         <div className="popular">
-          <p className="ml-8 mt-16 text-lg font-semibold">Popular</p>
-          <Card />          
+          <p className="ml-6 mt-12 text-lg font-semibold">Popular</p>
+          <UCard />          
         </div>
 
         <div className="recommended">
-          <p className="ml-8 mt-16 text-lg font-semibold">Recommended</p>
-          <Card />
+          <p className="ml-6 mt-6 text-lg font-semibold">Recommended</p>
+          <UCard />
         </div>
       </div>
     </div>

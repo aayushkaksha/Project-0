@@ -4,10 +4,10 @@ import Women from "./pages/Women";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 import Profile from "./pages/Profile";
-import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Message from "./pages/Message";
+import SellersPage from "./pages/SellersPage";
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
             <Route path="/ContactPage" element={<ContactPage />} />
             <Route path="/Profile" element={<Profile />} />
             <Route path="/Message" element={<Message />} />
-            <Route path="/Cart" element={<Cart />} />
+            <Route path="/Seller" element={<SellersPage />} />
           </Routes>
 
           <Footer />

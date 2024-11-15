@@ -55,7 +55,7 @@ const Wishlist = () => {
                   <span className='font-medium'>{item.name}</span>
                 </div>
               </td>
-              <td className='py-4 px-4'>{item.price}</td>
+              <td className='py-4 px-4'>Rs.{item.price}</td>
               <td className='py-4 px-4'>{item.stockStatus}</td>
               <td className='py-4 px-4'>
                 <div className='flex items-center space-x-2'>

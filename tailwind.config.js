@@ -6,7 +6,11 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'custom-880': '880px',
+      },
+    },
   },
   plugins: [],
 }
