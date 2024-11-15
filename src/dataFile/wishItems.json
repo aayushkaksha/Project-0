@@ -1,37 +1,102 @@
 [
   {
     "id": 1,
+<<<<<<< HEAD
     "name": "Leather Jacket",
     "price": "776.00",
     "image": "https://via.placeholder.com/63",
+=======
+    "name": "Handmade Steel Keyboard",
+    "price": "$776.00",
+    "image": "https://loremflickr.com/640/480/technology",
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
     "stockStatus": "In Stock"
   },
   {
     "id": 2,
+<<<<<<< HEAD
     "name": "Silk Blouse",
     "price": "515.00",
     "image": "https://via.placeholder.com/63",
+=======
+    "name": "Luxurious Granite Cheese",
+    "price": "$515.00",
+    "image": "https://loremflickr.com/640/480/food",
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
     "stockStatus": "Out of Stock"
   },
   {
     "id": 3,
+<<<<<<< HEAD
     "name": "Cotton Shirt",
     "price": "697.00",
     "image": "https://via.placeholder.com/63",
+=======
+    "name": "Elegant Rubber Soap",
+    "price": "$697.00",
+    "image": "https://loremflickr.com/640/480/bathroom",
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
     "stockStatus": "In Stock"
   },
   {
     "id": 4,
+<<<<<<< HEAD
     "name": "Wool Sweater",
     "price": "900.00",
     "image": "https://via.placeholder.com/63",
+=======
+    "name": "Incredible Wooden Bacon",
+    "price": "$900.00",
+    "image": "https://loremflickr.com/640/480/lake",
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
     "stockStatus": "Low Stock"
   },
   {
     "id": 5,
+<<<<<<< HEAD
     "name": "Denim Jeans",
     "price": "579.00",
     "image": "https://via.placeholder.com/63",
+=======
+    "name": "Ergonomic Wooden Computer",
+    "price": "$579.00",
+    "image": "https://loremflickr.com/640/480/hill",
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 6,
+    "name": "Handmade Steel Keyboard",
+    "price": "$776.00",
+    "image": "https://loremflickr.com/640/480/technology",
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 7,
+    "name": "Luxurious Granite Cheese",
+    "price": "$515.00",
+    "image": "https://loremflickr.com/640/480/food",
+    "stockStatus": "Out of Stock"
+  },
+  {
+    "id": 8,
+    "name": "Elegant Rubber Soap",
+    "price": "$697.00",
+    "image": "https://loremflickr.com/640/480/bathroom",
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 9,
+    "name": "Incredible Wooden Bacon",
+    "price": "$900.00",
+    "image": "https://loremflickr.com/640/480/lake",
+    "stockStatus": "Low Stock"
+  },
+  {
+    "id": 10,
+    "name": "Ergonomic Wooden Computer",
+    "price": "$579.00",
+    "image": "https://loremflickr.com/640/480/hill",
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
     "stockStatus": "In Stock"
   }
 ]

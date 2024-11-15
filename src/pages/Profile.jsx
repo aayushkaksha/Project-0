@@ -1,18 +1,32 @@
+<<<<<<< HEAD
 import NavBar from "../components/NavBar";
 import { Heart, Edit, X, Store } from "lucide-react";
 import Wishlist from "../components/Wishlist";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+=======
+import { Heart, Edit, X } from 'lucide-react'
+import Wishlist from '../components/Wishlist'
+import { useState } from 'react'
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
 
 const Profile = () => {
   const [wishlistOpen, setWishlistOpen] = useState(false);
   return (
+<<<<<<< HEAD
     <div className="flex flex-col min-h-screen">
       <NavBar />
       <div className="flex-grow overflow-auto">
         <div className="container mx-auto px-4 py-8">
           <div className="relative flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg mb-6">
+=======
+    <div className='flex flex-col min-h-screen'>
+      <div className='flex-grow overflow-auto'>
+        <div className='container mx-auto px-4 py-8'>
+          <div className='flex flex-col items-center'>
+            <div className='w-48 h-48 rounded-full overflow-hidden shadow-lg mb-6'>
+>>>>>>> 12edabf934bafd21386601e21e47f31e3822d196
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg/330px-Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
                 alt="Profile"
