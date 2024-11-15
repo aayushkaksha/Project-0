@@ -1,6 +1,5 @@
 import Sidebar from '../components/Sidebar'
 import CardiB from '../components/CardiB'
-import Card from '../components/Card'
 
 import Shopheader from '../components/Shopheader'
 

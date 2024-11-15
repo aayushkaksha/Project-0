@@ -1,9 +1,9 @@
-import Checkout from './Checkout'
+import Shop from './Shop'
 
 const Men = () => {
   return (
     <div>
-      <Checkout />
+      <Shop />
     </div>
   )
 }
