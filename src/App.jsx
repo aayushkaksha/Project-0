@@ -11,6 +11,8 @@ import Message from './pages/Message'
 import NavBar from './components/NavBar'
 import Shop from './pages/Shop'
 import SellersPage from './pages/SellersPage'
+import UCard from './components/UCard'
+import ProductDesc from './components/ProductDesc'
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
             <Route path='/Cart' element={<Cart />} />
             <Route path='/Shop' element={<Shop />} />
             <Route path='/Seller' element={<SellersPage />} />
+            <Route path='/' element={<UCard />} />
+            <Route path='/product/:id' element={<ProductDesc />} />
           </Routes>
         </div>
       </BrowserRouter>

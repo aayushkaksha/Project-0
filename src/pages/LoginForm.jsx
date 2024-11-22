@@ -33,7 +33,6 @@ const LoginForm = () => {
     e.preventDefault()
     if (validateForm()) {
       console.log('Form is valid')
-      
     } else {
       console.log('Form is invalid')
     }
@@ -225,10 +224,20 @@ const LoginForm = () => {
               <span className='text-sm'>GitHub</span>
             </button>
           </div>
+          <div className='flex items-center justify-between my-4 lg:my-6'>
+            <span className='border-b w-1/7 lg:w-1/5'></span>
+            <span className='text-sm text-gray-500'>
+              Don&apos;t have an account?{' '}
+              <a href='' className='text-blue-500 '>
+                Sign up
+              </a>
+            </span>
+            <span className='border-b w-1/7 lg:w-1/5'></span>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-export default LoginForm;
+export default LoginForm
