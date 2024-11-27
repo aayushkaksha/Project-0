@@ -1,7 +1,8 @@
 import SCard from '../components/SCard'
-import AddProduct from './AddProduct'
+import AddProduct from '../components/AddProduct'
 
 const SellersPage = () => {
+
   return (
     <div className='bg-gray-100 min-h-screen font-sans'>
       {/* Profile and AddProduct sections */}
@@ -15,7 +16,7 @@ const SellersPage = () => {
           <div className='mt-6'>
             <h2 className='text-3xl font-bold text-gray-800'>John Doe</h2>
             <p className='text-gray-600'>johndoe@example.com</p>
-            <p className='text-gray-500'>+1 (555) 123-4567</p>
+            <p className='text-gray-500'>+977 98123-45678</p>
           </div>
         </div>
 
