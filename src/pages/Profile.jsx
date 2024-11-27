@@ -1,5 +1,7 @@
 import { Edit, Store } from 'lucide-react'
 import Wishlist from '../components/Wishlist'
+import LoginForm from './LoginForm'
+import Signup from './Signup'
 
 import { NavLink } from 'react-router-dom'
 
@@ -42,6 +44,8 @@ const Profile = () => {
 
             <Wishlist />
           </div>
+          <LoginForm />
+          <Signup />
         </div>
       </div>
     </div>

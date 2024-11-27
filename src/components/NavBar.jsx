@@ -38,18 +38,14 @@ const NavBar = () => {
           <ul className='hidden lg:flex space-x-6'>
             <li>
               <NavLink
-                to='/Men'
+                to='/Shop'
                 className='flex items-center'
                 onClick={GotoTop}
               >
-                Men
+                Shop
               </NavLink>
             </li>
-            <li>
-              <NavLink to='/Women' onClick={GotoTop}>
-                Women
-              </NavLink>
-            </li>
+
             <li>
               <NavLink to='/About' className='text-primary' onClick={GotoTop}>
                 About
@@ -95,20 +91,11 @@ const NavBar = () => {
             <ul className='space-y-2'>
               <li>
                 <NavLink
-                  to='/Men'
+                  to='/Shop'
                   className='block px-4 py-2 hover:bg-gray-100'
                   onClick={GotoTop}
                 >
-                  Men
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to='/Women'
-                  className='block px-4 py-2 hover:bg-gray-100'
-                  onClick={GotoTop}
-                >
-                  Women
+                  Shop
                 </NavLink>
               </li>
               <li>
