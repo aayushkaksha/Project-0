@@ -1,8 +1,9 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom' // Import useNavigate
 import ProductDes from '../dataFile/ProductDes.json'
 
 export default function ProductDesc() {
   const { id } = useParams()
+  const navigate = useNavigate() // Initialize useNavigate
   const product = ProductDes.find((item) => item.id === parseInt(id))
 
   if (!product) {
@@ -10,7 +11,7 @@ export default function ProductDesc() {
   }
 
   return (
-    <div className='bg-gray-50 p-6 sm:p-8 max-w-6xl mx-auto shadow-lg rounded-lg'>
+    <div className='bg-gray-50 p-6 mt-6 sm:p-8 max-w-6xl mx-auto shadow-lg rounded-lg'>
       {/* Product Info Section */}
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {/* Image Section */}
@@ -91,7 +92,10 @@ export default function ProductDesc() {
             <button className='bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700'>
               Add to Cart
             </button>
-            <button className='bg-gray-200 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-300'>
+            <button
+              className='bg-gray-200 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-300'
+              onClick={() => navigate(-1)} // Go back to the last visited page
+            >
               Go Back
             </button>
           </div>

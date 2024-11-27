@@ -16,13 +16,13 @@ const UCard = () => {
           <div
             key={card.id}
             className='relative max-w-sm rounded-lg overflow-hidden shadow-md bg-white transition-transform duration-200 hover:shadow-lg hover:scale-105 cursor-pointer'
-            onClick={() => handleCardClick(card.id)}
           >
             <div className='relative h-0 pb-[75%]'>
               <img
                 className='absolute top-0 left-0 w-full h-full object-cover rounded-t-lg'
                 src={card.images}
                 alt={card.name}
+                onClick={() => handleCardClick(card.id)}
               />
               <button className='absolute bottom-2 right-2 bg-white rounded-full p-1 shadow hover:shadow-md transition-colors'>
                 <Heart className='w-5 h-5 text-gray-500 hover:text-red-500' />
@@ -31,12 +31,15 @@ const UCard = () => {
                 <Plus className='w-5 h-5 text-gray-500' />
               </button>
             </div>
-            <div className='mt-2 p-2 flex justify-between'>
+            <div
+              className='mt-2 p-2 flex justify-between'
+              onClick={() => handleCardClick(card.id)}
+            >
               <div>
                 <h3 className='text-sm text-gray-700'>{card.name}</h3>
               </div>
               <p className='text-sm font-medium text-gray-900'>
-                Rs.{card.Price}
+                Rs.{card.price}
               </p>
             </div>
           </div>
