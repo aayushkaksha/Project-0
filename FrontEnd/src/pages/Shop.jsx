@@ -1,7 +1,6 @@
 import Sidebar from '../components/Sidebar'
-import CardiB from '../components/CardiB'
-
 import Shopheader from '../components/Shopheader'
+import UCard from '../components/UCard'
 
 const Shop = () => {
   return (
@@ -9,7 +8,7 @@ const Shop = () => {
       <Sidebar />
       <div className='lg:ml-[320px]'>
         <Shopheader />
-        <CardiB />
+        <UCard />
       </div>
     </div>
   )
