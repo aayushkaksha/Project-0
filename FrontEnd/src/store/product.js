@@ -2,6 +2,8 @@ import { create } from "zustand";
 
 export const useProductStore = create((set) => ({
   products: [],
+  cart: [],
+  wishlist: [],
   loading: false,
   error: null,
 
@@ -97,4 +99,61 @@ export const useProductStore = create((set) => ({
       return { success: false, message: error.message };
     }
   },
+
+  //Add to Cart
+  // addToCart: async (pid) => {
+  //   set({ loading: true, error: null });
+
+  //   try {
+  //     const { products, cart } = get(); // Access the current state
+  //     const product = products.find((p) => p.id === pid);
+
+  //     if (!product) {
+  //       throw new Error("Product not found");
+  //     }
+
+  //     const isAlreadyInCart = cart.some((item) => item.id === pid);
+  //     if (isAlreadyInCart) {
+  //       throw new Error("Product is already in the cart");
+  //     }
+
+  //     set({
+  //       cart: [...cart, product], // Add the product to the cart
+  //       loading: false,
+  //     });
+
+  //     return { success: true, message: "Item added to cart" };
+  //   } catch (error) {
+  //     set({ loading: false, error: error.message });
+  //     return { success: false, message: error.message || "Failed to add item to cart" };
+  //   }
+  // },
+
+  // //Add to Wishlist
+  // addToWishList: async (pid) => {
+  //   set({ loading: true, error: null });
+
+  //   try {
+  //     const { products, wishlist } = get(); // Access the current state
+  //     const product = products.find((p) => p.id === pid); 
+  //     if (!product) {
+  //       throw new Error("Product not found");
+  //     }
+
+  //     const isAlreadyInWishlist = wishlist.some((item) => item.id === pid);
+  //     if (isAlreadyInWishlist) {
+  //       throw new Error("Product is already in the wishlist");
+  //     }
+
+  //     set({
+  //       wishlist: [...wishlist, product], // Add the product to the wishlist
+  //       loading: false,
+  //     });
+
+  //     return { success: true, message: "Item added to wishlist" };
+  //   } catch (error) {
+  //     set({ loading: false, error: error.message });
+  //     return { success: false, message: error.message || "Failed to add item to wishlist" };
+  //   }
+  // },
 }));

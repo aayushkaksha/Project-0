@@ -9,13 +9,8 @@ const Home = () => {
       <HorizontalSlider />
 
       <div className='cardCont'>
-        <div className='popular'>
-          <p className='ml-6 mt-12 text-lg font-semibold'>Popular</p>
-          <UCard />
-        </div>
-
-        <div className='recommended'>
-          <p className='ml-6 mt-6 text-lg font-semibold'>Recommended</p>
+        <div className='Products'>
+          <p className='ml-6 mt-12 text-lg font-semibold'>Products</p>
           <UCard />
         </div>
       </div>

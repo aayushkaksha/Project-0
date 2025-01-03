@@ -1,8 +1,57 @@
-import { Edit, Store } from "lucide-react";
+import { useEffect, useState } from "react";
+import { LogOut, Store } from "lucide-react"; // Importing the LogOut icon
 import Wishlist from "../components/Wishlist";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Profile = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState({ name: "", email: "" });
+
+  // Fetch user data
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/login");
+      return;
+    }
+
+    // Fetch user info using fetch API
+    const fetchUserData = async () => {
+      try {
+        const response = await fetch("/api/auth/profile", {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error("Error fetching user data");
+        }
+
+        const data = await response.json();
+        if (data.success) {
+          setUser(data.user); // Set the user data to state
+        } else {
+          throw new Error(data.message || "Failed to load user data");
+        }
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+        navigate("/login"); // Redirect to login if there's an issue
+      }
+    };
+
+    fetchUserData();
+  }, [navigate]);
+
+  // Logout function
+  const handleLogout = () => {
+    // Clear the token from localStorage
+    localStorage.removeItem("token");
+    // Redirect to the login page
+    navigate("/login");
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Main Content */}
@@ -20,12 +69,13 @@ const Profile = () => {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-gray-800">John Doe</h2>
-                <p className="text-gray-600">johndoe@example.com</p>
-                <p className="text-gray-500">+977 98123-45678</p>
+                <h2 className="text-3xl font-bold text-gray-800">
+                  {user.name}
+                </h2>
+                <p className="text-gray-600">{user.email}</p>
               </div>
             </div>
-            
+
             {/* Buttons Section */}
             <div className="flex flex-col items-stretch space-y-3 mt-6 custom-880:mt-0">
               <NavLink
@@ -36,14 +86,14 @@ const Profile = () => {
                 <Store className="w-5 h-5" />
                 <span>Be a Seller</span>
               </NavLink>
-              <NavLink
-                to="/Profile"
-                className="flex items-center space-x-2 bg-green-600 text-white px-5 py-2 rounded-lg shadow hover:bg-green-500 transition focus:ring-2 focus:ring-green-300"
-                aria-label="Edit Profile"
+              <button
+                onClick={handleLogout}
+                className="flex items-center space-x-2 bg-red-600 text-white px-5 py-2 rounded-lg shadow hover:bg-red-500 transition focus:ring-2 focus:ring-red-300"
+                aria-label="Logout"
               >
-                <Edit className="w-5 h-5" />
-                <span>Profile</span>
-              </NavLink>
+                <LogOut className="w-5 h-5" />
+                <span>Logout</span>
+              </button>
             </div>
           </div>
         </div>
