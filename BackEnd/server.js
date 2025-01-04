@@ -1,4 +1,5 @@
 import express from 'express'
+import path from 'path'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import { connectDB } from './config/db.js'
@@ -11,6 +12,7 @@ dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT || 5000
+const __dirname = path.resolve()
 
 // Middleware
 app.use(express.json()) // Parses incoming JSON requests
@@ -21,6 +23,14 @@ app.use('/api/auth', authRoutes)
 app.use('/api/products', productRoutes)
 app.use('/api/cart', cartRoutes)
 app.use('/api/wishlist', wishlistRoutes)
+
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/FrontEnd/dist")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontEnd", "dist", "index.html"))
+  })
+}
 
 // Database connection and server start
 connectDB()

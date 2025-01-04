@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon BackEnd/server.js"
+    "dev": "cross-env NODE_ENV=development nodemon BackEnd/server.js",
+    "build": "npm install && npm install --prefix FrontEnd && npm run build --prefix FrontEnd",
+    "start": "cross-env NODE_ENV=production node BackEnd/server.js"
   },
   "type": "module",
   "keywords": [],
@@ -19,5 +21,8 @@
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
